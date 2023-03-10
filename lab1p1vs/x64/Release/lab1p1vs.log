@@ -1,0 +1,10 @@
+﻿  lab1p1vs.cpp
+D:\2020Homework\AI\LAB\lab1p1vs\lab1p1vs\solutionIDAstar.h(28,10): warning C4101: “ch”: 未引用的局部变量
+D:\2020Homework\AI\LAB\lab1p1vs\lab1p1vs\solution.h(39,10): warning C4101: “ch”: 未引用的局部变量
+  正在生成代码
+D:\2020Homework\AI\LAB\lab1p1vs\lab1p1vs\solution.h(151): warning C4715: “solution::solve”: 不是所有的控件路径都返回值
+  2 of 606 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    3 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  lab1p1vs.vcxproj -> D:\2020Homework\AI\LAB\lab1p1vs\x64\Release\lab1p1vs.exe
