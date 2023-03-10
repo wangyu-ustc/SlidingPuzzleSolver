@@ -13,8 +13,8 @@ typedef std::tuple<int, uchar, char> TAction;
 
 struct status
 {
-    const int N {5};
-    const int size {25};
+    const int N;
+    const int size;
     int invalid = -1;
 
     int* board = nullptr;       // 棋盘状况
@@ -32,7 +32,7 @@ struct status
     status* father = nullptr;
 
     int g;      //已消耗代价
-    status() { board = new int[size]; slot = new int[size]; slot_size=0; g = 0; }
+//    status() { board = new int[size]; slot = new int[size]; slot_size=0; g = 0; }
 
     status(int N) : N(N), size(N*N) {
         board = new int[size];
@@ -69,11 +69,12 @@ struct status
 //        last_action = s.last_action;
 //        hash = s.hash;
 //    }
-    status(const char* path, int* _target_pos)
+    status(const char* path, int* _target_pos, int N) : N(N), size(N*N)
     {
         board = new int[size];
         slot = new int[size];
         g = 0;
+        slot_size = 0;
         std::fstream ifs;
         ifs.open(path);
         if (!ifs.is_open())
@@ -148,7 +149,7 @@ struct status
             return board[x - N];
     }
     int& down(int x) {
-        if (x > N*(N-1))
+        if (x >= N*(N-1))
             return invalid;
         else
             return board[x + N];
@@ -187,7 +188,7 @@ struct status
     {
         std::list<std::tuple<int, uchar, char>> rst;
         int temp;
-        for (uchar i = 0; i < 2; i++)
+        for (uchar i = 0; i < slot_size; i++)
         {
             if ((temp = left(slot[i])) > 0)
                 if (check_norepeat(temp, 'l'))
@@ -313,8 +314,8 @@ struct status
     //打印
     void print() const
     {
-        std::cout << "g = " << g << std::endl;
-        for (int i = 0; i < 5; i++)
+
+        for (int i = 0; i < N; i++)
         {
             for (int j = 0; j < N; j++)
                 printf("%3d", (*this)(i, j));

@@ -65,7 +65,7 @@ status solution::solve(const status& s)
         if (cnt % 100000 == 0)
         {
             std::cout <<"--- " <<cnt << "# f=" << n->f() <<" ---" <<std::endl;
-            std::cout <<"h=" <<n->h << std::endl;
+            std::cout <<"h=" <<n->h << ", g = " << n->g << std::endl;
             n->print();
         }
 
