@@ -308,7 +308,7 @@ struct status
     }
 
     int f() const{
-        return g + 2 * h;
+        return g + 2*h;
         //return g + 2 * h 对于input3.txt，使用这个启发式！
     }
     //打印
