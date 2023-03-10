@@ -1,4 +1,0 @@
-﻿  lab1p1vs.cpp
-D:\2020Homework\AI\LAB\lab1p1vs\lab1p1vs\solutionIDAstar.h(28,10): warning C4101: “ch”: 未引用的局部变量
-D:\2020Homework\AI\LAB\lab1p1vs\lab1p1vs\solutionIDAstar.h(112): warning C4715: “solutionIDAstar::solve”: 不是所有的控件路径都返回值
-  lab1p1vs.vcxproj -> D:\2020Homework\AI\LAB\lab1p1vs\x64\Debug\lab1p1vs.exe
