@@ -1,0 +1,11 @@
+﻿  lab1p1vs.cpp
+D:\2020Homework\AI\LAB\lab1p1vs\lab1p1vs\solution.h(45,20): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\2020Homework\AI\LAB\lab1p1vs\lab1p1vs\solution.h(53,17): error C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\2020Homework\AI\LAB\lab1p1vs\lab1p1vs\solution.h(54,13): error C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\2020Homework\AI\LAB\lab1p1vs\lab1p1vs\solution.h(175,15): error C2429: 语言功能 "结构化绑定" 需要编译器标志 "/std:c++17"
+D:\2020Homework\AI\LAB\lab1p1vs\lab1p1vs\solution.h(181,1): error C2050: switch 表达式不是整型
+D:\2020Homework\AI\LAB\lab1p1vs\lab1p1vs\solution.h(205,1): error C2050: switch 表达式不是整型
+D:\2020Homework\AI\LAB\lab1p1vs\lab1p1vs\solution.h(263,24): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+D:\2020Homework\AI\LAB\lab1p1vs\lab1p1vs\solution.h(264,19): error C2429: 语言功能 "结构化绑定" 需要编译器标志 "/std:c++17"
+D:\2020Homework\AI\LAB\lab1p1vs\lab1p1vs\solution.h(339,19): error C2429: 语言功能 "结构化绑定" 需要编译器标志 "/std:c++17"
+D:\2020Homework\AI\LAB\lab1p1vs\lab1p1vs\solution.h(313,9): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
