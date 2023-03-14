@@ -1,1 +1,1 @@
-./build/puzzle_solver -n 4 -i ./res/input_size4.txt -a AStar
+./build/puzzle_solver -n 4 -i ./res/input_size4.txt -a AStar -k 2
