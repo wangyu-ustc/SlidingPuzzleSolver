@@ -14,6 +14,7 @@ typedef std::tuple<int, uchar, char> TAction;
 struct status {
   const int N;
   const int size;
+  int k;
   int invalid = -1;
 
   int *board = nullptr; // 棋盘状况
@@ -45,6 +46,7 @@ struct status {
       board[i] = s.board[i];
     g = s.g;
     h = s.h;
+    k = s.k;
     target_pos = s.target_pos;
     slot_size = s.slot_size;
     slot = new int[size];
@@ -69,11 +71,14 @@ struct status {
   //        last_action = s.last_action;
   //        hash = s.hash;
   //    }
-  status(const char *path, int *_target_pos, int N) : N(N), size(N * N) {
+  status(const char *path, int *_target_pos, int N, int k)
+      : N(N), size(N * N), k(k) {
     board = new int[size];
     slot = new int[size];
     g = 0;
     slot_size = 0;
+    k = k;
+
     std::fstream ifs;
     ifs.open(path);
     if (!ifs.is_open()) {
@@ -290,7 +295,7 @@ struct status {
   }
 
   int f() const {
-    return g + 2 * h;
+    return g + k * h;
     // return g + 2 * h 对于input3.txt，使用这个启发式！
   }
   // 打印

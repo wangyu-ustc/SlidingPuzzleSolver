@@ -21,6 +21,8 @@ RunConfig parse_arguments(int argc, char *argv[]) {
         return std::string("Astar");
       });
 
+  program.add_argument("-k", "--k").required().help("todo").scan<'i', int>();
+
   program.add_argument("-n", "--NxN-puzzle")
       .required()
       .help("specify the dimension of puzzle grid")
@@ -41,7 +43,7 @@ RunConfig parse_arguments(int argc, char *argv[]) {
     std::exit(1);
   }
 
-  return {program.get<std::string>("--algorithm"),
+  return {program.get<std::string>("--algorithm"), program.get<int>("--k"),
           program.get<int>("--NxN-puzzle"),
           program.get<std::string>("--input_file")};
 }

@@ -39,6 +39,7 @@ status solutionIDAstar::solve(const status &s) {
     next_d_limit = INT_MAX;
 
     status *init_s = new status(s);
+    std::cout << "k=" << init_s->k << std::endl;
 
     list.push(init_s);
     list_map[*init_s] = init_s;

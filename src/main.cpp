@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
   std::cout << "N=" << N << std::endl;
 
   //   status s(argv[1], nullptr, N);
-  status s(run_config.input_file.c_str(), nullptr, N);
+  status s(run_config.input_file.c_str(), nullptr, N, run_config.k);
 
   int maxNum = s.size - s.slot_size;
   int *target_pos = new int[maxNum + 1];

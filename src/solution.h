@@ -31,6 +31,8 @@ status solution::solve(const status &s) {
     open_list.pop();
   status *n;
   status *init_s = new status(s);
+  std::cout << "k=" << init_s->k << std::endl;
+
   open_list.push(init_s);
   open_list_map[*init_s] = init_s;
 
