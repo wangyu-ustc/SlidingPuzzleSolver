@@ -21,7 +21,10 @@ RunConfig parse_arguments(int argc, char *argv[]) {
         return std::string("Astar");
       });
 
-  program.add_argument("-k", "--k").required().help("todo").scan<'i', int>();
+  program.add_argument("-k", "--k")
+      .required()
+      .help("specify the parameter of the heuristic function")
+      .scan<'i', int>();
 
   program.add_argument("-n", "--NxN-puzzle")
       .required()

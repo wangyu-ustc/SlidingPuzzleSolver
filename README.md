@@ -48,12 +48,13 @@ cmake --build .
 The program can be used with the following arguments:
 
 ```bash
-Usage: puzzle_solver [--help] [--version] [--algorithm VAR] --NxN-puzzle VAR --input_file VAR
+Usage: puzzle_solver [--help] [--version] [--algorithm VAR] --k VAR --NxN-puzzle VAR --input_file VAR
 
 Optional arguments:
   -h, --help            shows help message and exits 
   -v, --version         prints version information and exits 
   -a, --algorithm       specify the algorithm to use. The available algorithms are: Astar and IDAstar. The default algorithm is Astar. [default: "Astar"]
+  -k, --k               specify the parameter of the heuristic function [required]
   -n, --NxN-puzzle      specify the dimension of puzzle grid [required]
   -i, --input_file      specify the input file. The input file should be in the format of NxN puzzle grid, with each row separated by a newline character, and each number separated by a comma. The number 0 represents the empty slot. [required]
 ```
