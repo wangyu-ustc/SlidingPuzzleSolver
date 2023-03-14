@@ -7,19 +7,21 @@ This project was developed as a final project for CSE 202.
 
 To run the program, you need to have a GCC C++ or Clang compiler and CMake installed on your system.
 
-### Installing requirements
+### 1.1 For MacOS users
 
-For macOS users using homebrew, you can install CMake by running the following command:
+<!-- #### 1. Installing requirements -->
+
+Firstly, for users using homebrew, you can install CMake by running the following command:
 
 ```bash
 brew install cmake
 ```
 
-Note that for macOS, we recommend using Clang as your preferred compiler. Also, to ensure coding style consistency, we suggest installing clang-format using brew.
+*(Optional) Note that for macOS, we recommend using Clang as your preferred compiler. Also, to ensure coding style consistency, we suggest installing clang-format using brew.*
 
-## 2. Compiling
+<!-- #### 2. Compiling on MacOS -->
 
-To compile the program, follow these steps:
+Next, to compile the program, follow these steps:
 
 1. Create a build folder
 
